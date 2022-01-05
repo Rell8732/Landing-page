@@ -1,65 +1,44 @@
+/*************** Selectors ******************/
+
 body {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-#header {
-  top: 0;
-  position: fixed;
-  z-index: 1;
+
+table {
+  border: 1px solid black;
+  padding-bottom: 50px;
+  margin: auto 10px;
 }
 
-.topnav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: #95d1cc;
-  padding: 5px;
-}
-
-#header-img {
-  float: left;
-  margin: 0;
-}
-
-#title {
-  padding: 100px 0 0 0;
-  font-family: "Sacramento", cursive;
-}
-
-.topnav-right {
-  float: right;
-  padding: 10px;
-}
-
-.topnav-right a {
-  color: black;
+th {
   padding: 40px;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #95d1cc;
 }
 
-#org-img {
-  width: 100px;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-#email {
-  width: 200px;
-  margin: 10px;
+td {
+  padding: 5px 40px;
+  margin: auto 100px;
 }
 
-#submit {
-  width: 100px;
-  height: 30px;
-  background: #95d1cc;
-  border: none;
-  font-weight: bold;
+h3 {
+  margin: 0;
+  padding: 5px;
+  color: #95d1cc;
 }
 
-#submit:hover {
-  background-color: red;
-}
+/*********** Pseudo Classes ***********/
+
 
 /* unvisited link */
 a:link {
@@ -80,6 +59,18 @@ a:hover {
 a:active {
   color: yellow;
 }
+
+.select:hover {
+  background-color: red;
+}
+
+#submit:hover {
+  background-color: red;
+}
+
+
+/*********** ID Selectors ***********/
+
 
 #lightbulb {
   width: 100px;
@@ -110,13 +101,6 @@ a:active {
   text-align: left;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
-
-
-
 #star {
   width: 100px;
   float: left;
@@ -146,39 +130,49 @@ p {
   margin: auto 25%;
 }
 
-table {
-  border: 1px solid black;
-  padding-bottom: 50px;
-  margin: auto 10px;
-}
 
-th {
-  padding: 40px;
-  margin-bottom: 10px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  background-color: #95d1cc;
-}
 #bass {
   padding-left: 48px;
   padding-right: 48px;
 }
 
-td {
-  padding: 5px 40px;
-  margin: auto 100px;
+
+#header {
+  top: 0;
+  position: fixed;
+  z-index: 1;
 }
 
-h3 {
+
+
+#header-img {
+  float: left;
   margin: 0;
-  padding: 5px;
-  color: #95d1cc;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
+#title {
+  padding: 100px 0 0 0;
+  font-family: "Sacramento", cursive;
 }
+
+#org-img {
+  width: 100px;
+}
+
+#email {
+  width: 200px;
+  margin: 10px;
+}
+
+#submit {
+  width: 100px;
+  height: 30px;
+  background: #95d1cc;
+  border: none;
+  font-weight: bold;
+}
+
+
 
 #footer {
   background-color: #95d1cc;
@@ -187,6 +181,48 @@ h3 {
   padding-top: 10px;
   text-align: right;
 }
+
+
+/*********** Class Selectors ***********/
+
+
+.topnav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #95d1cc;
+  padding: 5px;
+}
+
+.topnav-right {
+  float: right;
+  padding: 10px;
+}
+
+.topnav-right a {
+  color: black;
+  padding: 40px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.select {
+  background-color: #95d1cc;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+
+
+
+/*********** Media Queries ***********/
+
 
 @media screen and (max-width: 800px) {
   .topnav .topnav-right a {
@@ -216,14 +252,4 @@ h3 {
     padding: 0;
     border: none;
   }
-}
-
-.select {
-  background-color: #95d1cc;
-  border: 1px solid black;
-  font-weight: bold;
-}
-
-.select:hover {
-  background-color: red;
 }
