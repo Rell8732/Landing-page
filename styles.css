@@ -115,10 +115,7 @@ p {
   padding: 0;
 }
 
-h3 {
-  margin: 0;
-  padding: 0;
-}
+
 
 #star {
   width: 100px;
@@ -173,6 +170,7 @@ td {
 }
 
 h3 {
+  margin: 0;
   padding: 5px;
   color: #95d1cc;
 }
